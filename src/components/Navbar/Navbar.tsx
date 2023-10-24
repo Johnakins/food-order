@@ -14,7 +14,7 @@ function Navbar() {
                 <Link href='/'>Contact</Link>
             </div>
             {/* LOGO */}
-            <div className='md: font-bold flex-1 md:text-center'>
+            <div className='md: font-bold flex-1 md:text-center text-xl'>
                 <Link href='/'>Johnakins</Link>
             </div>
             {/* MOBILE NO */}
