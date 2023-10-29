@@ -3,9 +3,9 @@ import React from 'react'
 import Menu from '@/components/Navbar/Menu'
 import CartIcon from './CartIcon'
 import Image from 'next/image'
+import UserLinks from './UserLinks'
 
 function Navbar() {
-    const user = false
     return (
         <div className='h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40'>
             <div className='hidden md:flex gap-4 flex-1'>
@@ -26,7 +26,7 @@ function Navbar() {
                     <Image src='/phone.png' alt='' width={20} height={20} />
                     <span>123 456 78</span>
                 </div>
-                {!user ? <Link href='/login'>login</Link> : <Link href='/orders'>orders</Link>}
+                <UserLinks />
                 <CartIcon />
             </div>
         </div>
